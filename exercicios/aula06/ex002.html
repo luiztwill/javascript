@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+        }
+
+        .caixa{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        div{
+            background-color: beige;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: justify;
+        }
+        div > h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="caixa">
+        <div>
+            <h1>Olá, Mundo!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem laudantium corrupti ad atque, quod ullam et pariatur ducimus mollitia consequuntur tenetur dolorum, suscipit aspernatur consequatur cumque placeat repudiandae neque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequuntur mollitia quam amet beatae architecto distinctio aliquam, ea animi vel ipsum labore quis officia, dolorem debitis voluptatum non tempora laborum!
+            </p>
+        </div>
+    </main>
+
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        window.alert('É um grande prazer em te conhecer, ' +  nome + '!')
+    </script>
+</body>
+</html>
