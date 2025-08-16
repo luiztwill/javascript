@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+</head>
+<body>
+    <h1>Idade</h1>
+    Idade <input type="number" name="txtpais" id="txtpais" placeholder="DIgíte sua idade">
+    <input type="button" value="enviar" onclick="enviar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function enviar() {
+            var idade = document.getElementById('txtpais')
+            var res = document.getElementById('res')
+            var valor = Number(idade.value)  
+
+            res.innerHTML = `<p>Você tem ${valor} anos`
+
+            if (valor >= 18) {
+                res.innerHTML += 'Vocé é adulto'
+            } else {res.innerHTML += `Vocé é de menor`}
+        }
+     
+    </script>
+</body>
+</html>
