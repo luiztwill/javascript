@@ -1,18 +1,18 @@
 
 
 function gerar() {
-    let valor = document.getElementById('txtv')
+    let num = document.getElementById('txtn')
     let tab = document.getElementById('seltab')
 
-    if (valor.value.length == 0) {
-        window.alert('Digite um valor!')
+    if(num.value.length == 0) {
+         window.alert('DIgite um número!')
     } else {
-        let v = Number(valor.value)
+        let n = Number(num.value)
         tab.innerHTML = ''
-        for(let c = 1 ; c <= 10; c++){
+        for (let c = 1; c <= 10; c++) {
             let item = document.createElement('option')
-            item.text = `${v} x ${c} = ${v*c}`
-            tab.appendChild(item)
+        item.innerHTML = `${n} x ${c} = ${n*c}`
+        tab.appendChild(item)
         }
     }
 }
